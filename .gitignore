@@ -4,4 +4,5 @@ _site
 vendor
 dist/
 yarn-error.log
+EIPS/.MWebMetaData/
 node_modules/
