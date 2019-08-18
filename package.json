@@ -1,0 +1,6 @@
+{
+  "scripts": {
+    "docs:dev": "vuepress dev EIPS",
+    "docs:build": "vuepress build EIPS"
+  }
+}
