@@ -1,5 +1,5 @@
 module.exports = {
-  title: "Ethereum Improvement Proposals",
+  title: "以太坊改进提案 EIPs",
   description: "Ethereum Improvement Proposals (EIPs) describe standards for the Ethereum platform, including core protocol specifications, client APIs, and contract standards.",
   ga: "",
   dest: "./dist/docs",
@@ -26,10 +26,10 @@ module.exports = {
     ],
     sidebar: [
       {
-        title: "概述",
+        title: "EIPs",
         collapsable: true,
         children: [
-          "README"
+          "/all",
         ]
       },
       {

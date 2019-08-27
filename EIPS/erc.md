@@ -6,7 +6,7 @@
 | --- | --- | --- |
 | [875](https://eips.ethereum.org/EIPS/eip-875) | Simpler NFT standard with batching and native atomic swaps | [Weiwu Zhang](mailto:a@colourful.land), [James Sangalli](mailto:j.l.sangalli@gmail.com) |
 
-## Draft
+## 草案 Draft
 
 | Number | Title | Author |
 | --- | --- | --- |

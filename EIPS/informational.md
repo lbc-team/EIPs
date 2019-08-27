@@ -1,6 +1,6 @@
 # Informational
 
-## Draft
+## 草案
 
 | Number | Title | Author |
 | --- | --- | --- |
