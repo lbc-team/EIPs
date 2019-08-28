@@ -1,19 +1,19 @@
 # Networking
 
-## Draft
+## 草案(Draft)
 
-| Number | Title | Author |
+| 编号 | 标题 | 作者 |
 | --- | --- | --- |
-| [778](https://eips.ethereum.org/EIPS/eip-778) | Ethereum Node Records (ENR) | [Felix Lange](mailto:fjl@ethereum.org) |
-| [868](https://eips.ethereum.org/EIPS/eip-868) | Node Discovery v4 ENR Extension | [Felix Lange](mailto:fjl@ethereum.org) |
-| [1459](https://eips.ethereum.org/EIPS/eip-1459) | Node Discovery via DNS | [Felix Lange](mailto:fjl@ethereum.org), [Péter Szilágyi](mailto:peter@ethereum.org) |
-| [2124](https://eips.ethereum.org/EIPS/eip-2124) | Fork identifier for chain compatibility checks | [Péter Szilágyi](mailto:peterke@gmail.com), [Felix Lange](mailto:fjl@ethereum.org) |
+| [778](eip-778.md) | Ethereum Node Records (ENR) | [Felix Lange](mailto:fjl@ethereum.org) |
+| [868](eip-868.md) | Node Discovery v4 ENR Extension | [Felix Lange](mailto:fjl@ethereum.org) |
+| [1459](eip-1459.md) | Node Discovery via DNS | [Felix Lange](mailto:fjl@ethereum.org), [Péter Szilágyi](mailto:peter@ethereum.org) |
+| [2124](eip-2124.md) | Fork identifier for chain compatibility checks | [Péter Szilágyi](mailto:peterke@gmail.com), [Felix Lange](mailto:fjl@ethereum.org) |
 
-## Final
+## 最终(Final)
 
-| Number | Title | Author |
+| 编号 | 标题 | 作者 |
 | --- | --- | --- |
-| [8](https://eips.ethereum.org/EIPS/eip-8) | devp2p Forward Compatibility Requirements for Homestead | [Felix Lange](mailto:felix@ethdev.com) |
-| [627](https://eips.ethereum.org/EIPS/eip-627) | Whisper Specification | [Vlad Gluhovsky](mailto:gluk256@gmail.com) |
-| [706](https://eips.ethereum.org/EIPS/eip-706) | DEVp2p snappy compression | [Péter Szilágyi](mailto:peter@ethereum.org) |
+| [8](eip-8.md) | devp2p Forward Compatibility Requirements for Homestead | [Felix Lange](mailto:felix@ethdev.com) |
+| [627](eip-627.md) | Whisper Specification | [Vlad Gluhovsky](mailto:gluk256@gmail.com) |
+| [706](eip-706.md) | DEVp2p snappy compression | [Péter Szilágyi](mailto:peter@ethereum.org) |
 

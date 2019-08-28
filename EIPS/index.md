@@ -1,47 +1,58 @@
-# EIPs
+# EIPs 概要
 
-Ethereum Improvement Proposals (EIPs) describe standards for the Ethereum platform, including core protocol specifications, client APIs, and contract standards.
+以太坊改进提案（EIPs）描述了以太坊平台的标准，包括核心协议规范，客户端 API和合同标准。
+任何人都可以参与以太坊的改进，参与的方式是向以太坊[EIPs GitHub库](https://github.com/ethereum/EIPs)提交改进提案的pull request，大家可以阅读[EIP-1](eip-1.md) 了解如何提交改进提案。
 
-## Contributing
 
-First review [EIP-1](https://eips.ethereum.org/EIPS/eip-1). Then clone the repository and add your EIP to it. There is a [template EIP here](https://github.com/ethereum/EIPs/blob/master/eip-template.md). Then submit a Pull Request to Ethereum's [EIPs repository](https://github.com/ethereum/EIPs).
+## EIP 状态（status terms）
 
-## EIP status terms
+一个“成功的”EIP会经过以下几个状态：
 
-* **Draft** - an EIP that is open for consideration and is undergoing rapid iteration and changes.
-* **Last Call** - an EIP that is done with its initial iteration and ready for review by a wide audience.
-* **Accepted** - a core EIP that has been in Last Call for at least 2 weeks and any technical changes that were requested have been addressed by the author. The process for Core Devs to decide whether to encode an EIP into their clients as part of a hard fork is not part of the EIP process. If such a decision is made, the EIP will move to final.
-* **Final (non-Core)** - an EIP that has been in Last Call for at least 2 weeks and any technical changes that were requested have been addressed by the author.
-* **Final (Core)** - an EIP that the Core Devs have decided to implement and release in a future hard fork or has already been released in a hard fork.
+```
+草案（Draft -> 最后召集（Last Call） -> 已接受（Accepte） -> 最终（Final）
+```
 
-## EIP Types
+* **草案 Draft** - 说明此提案还在开放讨论，正在进行快速迭代和更改的EIP。
+* **最后召集 Last Call** - 完成了初始迭代，并准备好供更大受众查阅。
+* **已接受 Accepted** - 核心EIP（core EIP) 至少在 `最后召集` 状态至少两周。并且作者已解决了所要求的任何技术变更。核心开发团队决定是否将EIP作为硬分叉的一部分编码到客户端（硬分叉的过程不是EIP过程的一部分）。 如果做出这样的决定，EIP将进入最终决定。
+* **最终 Final (non-Core)** -  EIP 至少在 `最后召集` 状态至少两周。并且作者已解决了所要求的任何技术变更。
+* **最终 Final (Core)** - 核心开发团队决定实现此EIP并作为将来/或已经硬分叉的一部分。
 
-EIPs are separated into a number of types, and each has its own list of EIPs.
+## EIP 分类（Types）
 
-### Standard Track (202)
+EIP 分为多种类型，每种类型都有自己的EIP列表。
 
-Describes any change that affects most or all Ethereum implementations, such as a change to the the network protocol, a change in block or transaction validity rules, proposed application standards/conventions, or any change or addition that affects the interoperability of applications using Ethereum. Furthermore Standard EIPs can be broken down into the following categories.
+### 标准跟踪 Standard Track (202)
 
-#### [Core](https://eips.ethereum.org/core) (84)
+描述影响以太坊实现的任何更改，例如网络协议的更改、块或交易有效性规则的更改、应用程序标准或约定，或影响以太坊应用程序交互的任何更改或添加。标准跟踪EIP 细分为以下几类。
 
-Improvements requiring a consensus fork (e.g. [EIP5](https://eips.ethereum.org/EIPS/eip-5), [EIP101](https://eips.ethereum.org/EIPS/eip-101)), as well as changes that are not necessarily consensus critical but may be relevant to “core dev” discussions (for example, the miner/node strategy changes 2, 3, and 4 of [EIP86](https://eips.ethereum.org/EIPS/eip-86)).
+#### [核心 Core](core.md) (84)
 
-#### [Networking](https://eips.ethereum.org/networking) (7)
+核心提案包含产生共识分叉的改进(如：[EIP5](eip-5.md), [EIP101](eip-101.md))，以及一些也许不是共识部分但可能与“核心开发”讨论相关的变更（例如，矿工/节点策略更改[EIP86](eip-86.md)的2,3和4））。
 
-Includes improvements around devp2p ([EIP8](https://eips.ethereum.org/EIPS/eip-8)) and Light Ethereum Subprotocol, as well as proposed improvements to network protocol specifications of whisper and swarm.
+#### [网络 Networking](networking.md) (7)
 
-#### [Interface](https://eips.ethereum.org/interface) (18)
+包括围绕devp2p ([EIP8](eip-8.md)) 和轻客户端子协议的改进，以及对 whisper 和 swarm 网络协议规范的改进建议。
 
-Includes improvements around client API/RPC specifications and standards, and also certain language-level standards like method names ([EIP6](https://eips.ethereum.org/EIPS/eip-6)) and contract ABIs. The label “interface” aligns with the interfaces repo and discussion should primarily occur in that repository before an EIP is submitted to the EIPs repository.
 
-#### [ERC](https://eips.ethereum.org/erc) (93)
+#### [接口 Interface](interface.md) (18)
 
-Application-level standards and conventions, including contract standards such as token standards ([ERC20](https://eips.ethereum.org/EIPS/eip-20)), name registries ([ERC137](https://eips.ethereum.org/EIPS/eip-137)), URI schemes ([ERC681](https://eips.ethereum.org/EIPS/eip-681)), library/package formats ([EIP190](https://eips.ethereum.org/EIPS/eip-190)), and wallet formats ([EIP85](https://github.com/ethereum/EIPs/issues/85)).
+包括有关客户端API/RPC规范和标准的改进，以及某些语言级别标准，如方法名([EIP6](eip-6))和合约ABI。
 
-### [Meta](https://eips.ethereum.org/meta) (14)
 
-Describes a process surrounding Ethereum or proposes a change to (or an event in) a process. Process EIPs are like Standards Track EIPs but apply to areas other than the Ethereum protocol itself. They may propose an implementation, but not to Ethereum's codebase; they often require community consensus; unlike Informational EIPs, they are more than recommendations, and users are typically not free to ignore them. Examples include procedures, guidelines, changes to the decision-making process, and changes to the tools or environment used in Ethereum development. Any meta-EIP is also considered a Process EIP.
+#### [应用标准提案 ERC](erc.md) (93)
 
-### [Informational](https://eips.ethereum.org/informational) (1)
+ERC 是 Ethereum Request for Comment 的缩写，原本是征求大家意见的意思，主要是应用程序标准或约定，包含如：代币标准合约([ERC20](eip-20.md))，名称注册([ERC137](eip-137.md))，URI schemes ([ERC681](eip-681.md))，库/包格式 ([EIP190](eip-190.md))，
+钱包格式 ([EIP85](https://github.com/ethereum/EIPs/issues/85))等。
 
-Describes a Ethereum design issue, or provides general guidelines or information to the Ethereum community, but does not propose a new feature. Informational EIPs do not necessarily represent Ethereum community consensus or a recommendation, so users and implementers are free to ignore Informational EIPs or follow their advice.
+
+### [元提案 Meta](meta.md) (14)
+
+
+描述以太坊的改进过程（或事件），也被视为过程EIP（Process EIP）。 流程EIP类似于标准跟踪EIP，但流程EIP描述以太坊协议外的内容（而不是协议本身）。 他们可能会提出一个实现，但不会加入到以太坊的代码库; 这些提案经常需要社区共识; 与信息EIP不同，它们不仅仅是建议，用户通常也不能忽略它们。 提案包括程序，指南，决策过程的变更以及以太坊开发中使用的工具或环境的变更。
+
+
+
+### [信息提案 Informational](informational.md) (1)
+
+描述以太坊设计问题，或向以太坊社区提供一般指导信息，但不提出新功能。 信息提案不一定代表以太坊社区的共识或推荐，因此用户和实施者可以自由地忽略信息EIP或遵循他们的建议。

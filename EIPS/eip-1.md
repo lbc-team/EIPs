@@ -1,15 +1,11 @@
----
-eip: 1
-title: EIP Purpose and Guidelines
-status: Active
-type: Meta
-author: Martin Becze <mb@ethereum.org>, Hudson Jameson <hudson@ethereum.org>, and others
-        https://github.com/ethereum/EIPs/blob/master/EIPS/eip-1.md
-created: 2015-10-27
-updated: 2015-12-07, 2016-02-01, 2018-03-21, 2018-05-29, 2018-10-17, 2019-05-19
----
+# EIP 1: EIP Purpose and Guidelines
 
-## What is an EIP?
+| 作者 | 状态 | 类型 | 创建时间 | 更新时间 |
+| --- | --- | --- | --- | --- |
+|  Martin Becze 等 | Active | Meta | 2015-10-27| 2019-05-19 |
+
+
+## 什么是EIP?
 
 EIP stands for Ethereum Improvement Proposal. An EIP is a design document providing information to the Ethereum community, or describing a new feature for Ethereum or its processes or environment. The EIP should provide a concise technical specification of the feature and a rationale for the feature. The EIP author is responsible for building consensus within the community and documenting dissenting opinions.
 
@@ -19,7 +15,7 @@ We intend EIPs to be the primary mechanisms for proposing new features, for coll
 
 For Ethereum implementers, EIPs are a convenient way to track the progress of their implementation. Ideally each implementation maintainer would list the EIPs that they have implemented. This will give end users a convenient way to know the current status of a given implementation or library.
 
-## EIP Types
+## EIP 类型
 
 There are three types of EIP:
 
@@ -42,21 +38,21 @@ If a **Core** EIP mentions or proposes changes to the EVM (Ethereum Virtual Mach
 REVERT (0xfe)
 ```
 
-## EIP Work Flow
+## EIP 工作流
 
 ### Shepherding an EIP
 
 Parties involved in the process are you, the champion or *EIP author*, the [*EIP editors*](#eip-editors), and the [*Ethereum Core Developers*](https://github.com/ethereum/pm).
 
-Before you begin writing a formal EIP, you should vet your idea. Ask the Ethereum community first if an idea is original to avoid wasting time on something that will be be rejected based on prior research. It is thus recommended to open a discussion thread on [the Ethereum Magicians forum] to do this, but you can also use [one of the Ethereum Gitter chat rooms], [the Ethereum subreddit] or [the Issues section of this repository]. 
+Before you begin writing a formal EIP, you should vet your idea. Ask the Ethereum community first if an idea is original to avoid wasting time on something that will be be rejected based on prior research. It is thus recommended to open a discussion thread on [the Ethereum Magicians forum] to do this, but you can also use [one of the Ethereum Gitter chat rooms], [the Ethereum subreddit] or [the Issues section of this repository].
 
 In addition to making sure your idea is original, it will be your role as the author to make your idea clear to reviewers and interested parties, as well as inviting editors, developers and community to give feedback on the aforementioned channels. You should try and gauge whether the interest in your EIP is commensurate with both the work involved in implementing it and how many parties will have to conform to it. For example, the work required for implementing a Core EIP will be much greater than for an ERC and the EIP will need sufficient interest from the Ethereum client teams. Negative community feedback will be taken into consideration and may prevent your EIP from moving past the Draft stage.
 
 ### Core EIPs
 
-For Core EIPs, given that they require client implementations to be considered **Final** (see "EIPs Process" below), you will need to either provide an implementation for clients or convince clients to implement your EIP. 
+For Core EIPs, given that they require client implementations to be considered **Final** (see "EIPs Process" below), you will need to either provide an implementation for clients or convince clients to implement your EIP.
 
-The best way to get client implementers to review your EIP is to present it on an AllCoreDevs call. You can request to do so by posting a comment linking your EIP on an [AllCoreDevs agenda Github Issue].  
+The best way to get client implementers to review your EIP is to present it on an AllCoreDevs call. You can request to do so by posting a comment linking your EIP on an [AllCoreDevs agenda Github Issue].
 
 The AllCoreDevs call serve as a way for client implementers to do three things. First, to discuss the technical merits of EIPs. Second, to gauge what other clients will be implementing. Third, to coordinate EIP implementation for network upgrades.
 
@@ -64,9 +60,9 @@ These calls generally result in a "rough consensus" around what EIPs should be i
 
 :warning: The EIPs process and AllCoreDevs call were not designed to address contentious non-technical issues, but, due to the lack of other ways to address these, often end up entangled in them. This puts the burden on client implementers to try and gauge community sentiment, which hinders the technical coordination function of EIPs and AllCoreDevs calls. If you are shepherding an EIP, you can make the process of building community consensus easier by making sure that [the Ethereum Magicians forum] thread for your EIP includes or links to as much of the community discussion as possible and that various stakeholders are well-represented.
 
-*In short, your role as the champion is to write the EIP using the style and format described below, shepherd the discussions in the appropriate forums, and build community consensus around the idea.* 
+*In short, your role as the champion is to write the EIP using the style and format described below, shepherd the discussions in the appropriate forums, and build community consensus around the idea.*
 
-### EIP Process 
+### EIP Process
 
 Following is the process that a successful EIP will move along:
 
@@ -122,33 +118,33 @@ Image files should be included in a subdirectory of the `assets` folder for that
 
 Each EIP must begin with an [RFC 822](https://www.ietf.org/rfc/rfc822.txt) style header preamble, preceded and followed by three hyphens (`---`). This header is also termed ["front matter" by Jekyll](https://jekyllrb.com/docs/front-matter/). The headers must appear in the following order. Headers marked with "*" are optional and are described below. All other headers are required.
 
-` eip:` <EIP number> (this is determined by the EIP editor)
+` eip:`  EIP 编号 (this is determined by the EIP editor)
 
-` title:` <EIP title>
+` title:` EIP title
 
-` author:` <a list of the author's or authors' name(s) and/or username(s), or name(s) and email(s). Details are below.>
+` author:` a list of the author's or authors' name(s) and/or username(s), or name(s) and email(s). Details are below.
 
 ` * discussions-to:` \<a url pointing to the official discussion thread\>
 
-` status:` <Draft | Last Call | Accepted | Final | Active | Abandoned | Rejected | Superseded>
+` status:` Draft | Last Call | Accepted | Final | Active | Abandoned | Rejected | Superseded
 
-`* review-period-end:` <date review period ends>
+`* review-period-end:` date review period ends
 
-` type:` <Standards Track (Core, Networking, Interface, ERC)  | Informational | Meta>
+` type:` Standards Track (Core, Networking, Interface, ERC)  | Informational | Meta
 
-` * category:` <Core | Networking | Interface | ERC>
+` * category:` Core | Networking | Interface | ERC
 
-` created:` <date created on>
+` created:` date created on
 
-` * updated:` <comma separated list of dates>
+` * updated:` comma separated list of dates>
 
-` * requires:` <EIP number(s)>
+` * requires:` EIP number(s)
 
-` * replaces:` <EIP number(s)>
+` * replaces:` EIP number(s)
 
-` * superseded-by:` <EIP number(s)>
+` * superseded-by:` EIP number(s)
 
-` * resolution:` \<a url pointing to the resolution of this EIP\>
+` * resolution:` a url pointing to the resolution of this EIP
 
 Headers that permit lists must separate elements with commas.
 

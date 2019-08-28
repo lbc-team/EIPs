@@ -1,36 +1,36 @@
 # Meta
 
-## Draft
+## 草案(Draft)
 
-| Number | Title | Author |
+| 编号 | 标题 | 作者 |
 | --- | --- | --- |
-| [233](https://eips.ethereum.org/EIPS/eip-233) | Formal process of hard forks | [Alex Beregszaszi](https://github.com/axic) |
-| [867](https://eips.ethereum.org/EIPS/eip-867) | Standardized Ethereum Recovery Proposals | [Dan Phifer](mailto:dp@musiconomi.com), [James Levy](mailto:james@taptrust.com), [Reuben Youngblom](mailto:reuben@taptrust.com) |
-| [1588](https://eips.ethereum.org/EIPS/eip-1588) | Hardfork Meta: Ethereum ProgPoW | [Ikmyeong Na](https://github.com/naikmyeong) |
-| [1679](https://eips.ethereum.org/EIPS/eip-1679) | Hardfork Meta: Istanbul | [Alex Beregszaszi](https://github.com/axic), [Afri Schoedon](https://github.com/5chdn) |
-| [1872](https://eips.ethereum.org/EIPS/eip-1872) | Ethereum Network Upgrade Windows | [Danno Ferrin](https://github.com/shemnon) |
+| [233](eip-233.md) | Formal process of hard forks | [Alex Beregszaszi](https://github.com/axic) |
+| [867](eip-867.md) | Standardized Ethereum Recovery Proposals | [Dan Phifer](mailto:dp@musiconomi.com), [James Levy](mailto:james@taptrust.com), [Reuben Youngblom](mailto:reuben@taptrust.com) |
+| [1588](eip-1588.md) | Hardfork Meta: Ethereum ProgPoW | [Ikmyeong Na](https://github.com/naikmyeong) |
+| [1679](eip-1679) | Hardfork Meta: Istanbul | [Alex Beregszaszi](https://github.com/axic), [Afri Schoedon](https://github.com/5chdn) |
+| [1872](eip-1872.md) | Ethereum Network Upgrade Windows | [Danno Ferrin](https://github.com/shemnon) |
 
-## Final
+## 最终(Final)
 
-| Number | Title | Author |
+| 编号 | 标题 | 作者 |
 | --- | --- | --- |
-| [606](https://eips.ethereum.org/EIPS/eip-606) | Hardfork Meta: Homestead | [Alex Beregszaszi](https://github.com/axic) |
-| [607](https://eips.ethereum.org/EIPS/eip-607) | Hardfork Meta: Spurious Dragon | [Alex Beregszaszi](https://github.com/axic) |
-| [608](https://eips.ethereum.org/EIPS/eip-608) | Hardfork Meta: Tangerine Whistle | [Alex Beregszaszi](https://github.com/axic) |
-| [609](https://eips.ethereum.org/EIPS/eip-609) | Hardfork Meta: Byzantium | [Alex Beregszaszi](https://github.com/axic) |
-| [779](https://eips.ethereum.org/EIPS/eip-779) | Hardfork Meta: DAO Fork | [Casey Detrio](https://github.com/cdetrio) |
-| [1013](https://eips.ethereum.org/EIPS/eip-1013) | Hardfork Meta: Constantinople | [Nick Savers](https://github.com/nicksavers) |
-| [1716](https://eips.ethereum.org/EIPS/eip-1716) | Hardfork Meta: Petersburg | [Afri Schoedon](https://github.com/5chdn), [Marius van der Wijden](https://github.com/MariusVanDerWijden) |
+| [606](eip-606.md) | Hardfork Meta: Homestead | [Alex Beregszaszi](https://github.com/axic) |
+| [607](eip-607.md) | Hardfork Meta: Spurious Dragon | [Alex Beregszaszi](https://github.com/axic) |
+| [608](eip-608.md) | Hardfork Meta: Tangerine Whistle | [Alex Beregszaszi](https://github.com/axic) |
+| [609](eip-609.md) | Hardfork Meta: Byzantium | [Alex Beregszaszi](https://github.com/axic) |
+| [779](eip-779.md) | Hardfork Meta: DAO Fork | [Casey Detrio](https://github.com/cdetrio) |
+| [1013](eip-1013.md) | Hardfork Meta: Constantinople | [Nick Savers](https://github.com/nicksavers) |
+| [1716](eip-1716.md) | Hardfork Meta: Petersburg | [Afri Schoedon](https://github.com/5chdn), [Marius van der Wijden](https://github.com/MariusVanDerWijden) |
 
-## Active
+## 活跃(Active)
 
-| Number | Title | Author |
+| 编号 | 标题 | 作者 |
 | --- | --- | --- |
-| [1](https://eips.ethereum.org/EIPS/eip-1) | EIP Purpose and Guidelines | [Martin Becze](mailto:mb@ethereum.org), [Hudson Jameson](mailto:hudson@ethereum.org), and others https://github.com/ethereum/EIPs/blob/master/EIPS/eip-1.md |
+| [1](eip-1.md) | EIP Purpose and Guidelines | [Martin Becze](mailto:mb@ethereum.org), [Hudson Jameson](mailto:hudson@ethereum.org), and others https://github.com/ethereum/EIPs/blob/master/EIPS/eip-1.md |
 
-## Superseded
+## 被取代(Superseded)
 
-| Number | Title | Author |
+| 编号 | 标题 | 作者 |
 | --- | --- | --- |
-| [4](https://eips.ethereum.org/EIPS/eip-4) | EIP Classification | [Joseph Chow](https://github.com/ethers) |
+| [4](eip-4.md) | EIP Classification | [Joseph Chow](https://github.com/ethers) |
 
