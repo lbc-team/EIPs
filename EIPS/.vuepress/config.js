@@ -67,35 +67,62 @@ module.exports = {
         title: "接口提案",
         collapsable: true,
         children: [
-          "/interface"
+          "/interface",
+          "/eip-6.md"
       	]
       },
       {
         title: "网络提案",
         collapsable: true,
         children: [
-          "/networking"
+          "/networking",
+          "/eip-8.md",
+          "/eip-627.md",
+          "/eip-706.md"
       	]
       },
       {
-        title: "ERC 应用标准提案",
+        title: "应用标准提案(ERC)",
         collapsable: true,
         children: [
-          "/erc"
+          "/erc",
+          "/eip-20",
+          "/eip-55",
+          "/eip-137",
+          "/eip-162",
+          "/eip-165",
+          "/eip-181",
+          "/eip-190",
+          "/eip-721",
+          "/eip-777",
+          "/eip-1155",
+          "/eip-1167",
+          "/eip-1820",
+          "/eip-875.md"
+
       	]
       },
       {
         title: "过程提案(Meta)",
         collapsable: true,
         children: [
-          "/meta"
+          "/meta",
+          "/eip-1",
+          "/eip-606.md",
+          "/eip-607.md",
+          "/eip-608.md",
+          "/eip-609.md",
+          "/eip-779.md",
+          "/eip-1013.md",
+          "/eip-1716.md"
       	]
       },
       {
         title: "信息提案(Informational)",
         collapsable: true,
         children: [
-          "/informational"
+          "/informational",
+          "/eip-1470.md"
       	]
       }
     ]

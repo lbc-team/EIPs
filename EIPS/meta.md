@@ -1,4 +1,8 @@
-# Meta
+# 所有的元提案
+
+元提案描述以太坊的改进过程（或事件），也被视为过程EIP（Process EIP）。
+
+关于提案分类可以阅读[以太坊改进提案概要](https://learnblockchain.cn/docs/eips/)或[EIP-1:EIP 用途及指导原则](https://learnblockchain.cn/docs/eips/eip-1.html)
 
 ## 草案(Draft)
 

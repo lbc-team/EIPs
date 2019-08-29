@@ -1,5 +1,9 @@
 # 所有核心提案
 
+核心(Core)提案通常包含产生共识分叉的改进，也包含一些矿工/节点策略更改。
+
+关于提案分类可以阅读[以太坊改进提案概要](https://learnblockchain.cn/docs/eips/)或[EIP-1:EIP 用途及指导原则 ](https://learnblockchain.cn/docs/eips/eip-1.html)
+
 ## 最后召集(Last Call)
 
 | 编号 | 标题 | 作者 |
@@ -86,7 +90,7 @@
 | [198](eip-198.md) | Big integer modular exponentiation | [Vitalik Buterin](mailto:v@buterin.com) |
 | [211](eip-211.md) | New opcodes: RETURNDATASIZE and RETURNDATACOPY | [Christian Reitwiessner](mailto:chris@ethereum.org) |
 | [214](eip-214.md) | New opcode STATICCALL | [Vitalik Buterin](mailto:vitalik@ethereum.org), [Christian Reitwiessner](mailto:chris@ethereum.org;) |
-| [225](eip-225.md) | Clique proof-of-作者ity consensus protocol | [Péter Szilágyi](mailto:peterke@gmail.com) |
+| [225](eip-225.md) | Clique proof-of-authority consensus protocol | [Péter Szilágyi](mailto:peterke@gmail.com) |
 | [649](eip-649.md) | Metropolis Difficulty Bomb Delay and Block Reward Reduction | [Afri Schoedon](https://github.com/5chdn), [Vitalik Buterin](https://github.com/vbuterin) |
 | [658](eip-658.md) | Embedding transaction status code in receipts | [Nick Johnson](mailto:nick@ethereum.org) |
 | [1014](eip-1014.md) | Skinny CREATE2 | [Vitalik Buterin](https://github.com/vbuterin) |

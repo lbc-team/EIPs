@@ -1,15 +1,15 @@
-# EIP 1: EIP Purpose and Guidelines
+# EIP 1: EIP 用途及指导原则
 
 | 作者 | 状态 | 类型 | 创建时间 | 更新时间 |
 | --- | --- | --- | --- | --- |
-|  Martin Becze 等 | Active | Meta | 2015-10-27| 2019-05-19 |
+|  Martin Becze 等 | 活跃 | Meta | 2015-10-27| 2019-05-19 |
 
 
 ## 什么是EIP?
 
 EIP stands for Ethereum Improvement Proposal. An EIP is a design document providing information to the Ethereum community, or describing a new feature for Ethereum or its processes or environment. The EIP should provide a concise technical specification of the feature and a rationale for the feature. The EIP author is responsible for building consensus within the community and documenting dissenting opinions.
 
-## EIP Rationale
+## EIP 原则
 
 We intend EIPs to be the primary mechanisms for proposing new features, for collecting community technical input on an issue, and for documenting the design decisions that have gone into Ethereum. Because the EIPs are maintained as text files in a versioned repository, their revision history is the historical record of the feature proposal.
 

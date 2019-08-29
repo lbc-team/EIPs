@@ -1,5 +1,9 @@
 # 所有改进提案
 
+所有改进提案按不同的状态分类（关于案状态可以阅读[以太坊改进提案概要](https://learnblockchain.cn/docs/eips/)或[EIP-1:EIP 用途及指导原则 ](https://learnblockchain.cn/docs/eips/eip-1.html)）。
+
+左侧目录列出了最终（采纳）和活跃的EIP，所有改进提案列表如下：
+
 ## 最后召集(Last Call)
 
 | 编号 | 标题 | 作者 |
@@ -224,20 +228,20 @@
 | [1716](eip-1716.md) | Hardfork Meta: Petersburg | [Afri Schoedon](https://github.com/5chdn), [Marius van der Wijden](https://github.com/MariusVanDerWijden) |
 | [1820](eip-1820.md) | Pseudo-introspection Registry Contract | [Jordi Baylina](mailto:jordi@baylina.cat), [Jacques Dafflon](mailto:mail@0xjac.com) |
 
-## Active
+## 活跃(Active)
 
 | 编号 | 标题 | 作者 |
 | --- | --- | --- |
 | [1](eip-1.md) | EIP Purpose and Guidelines | [Martin Becze](mailto:mb@ethereum.org), [Hudson Jameson](mailto:hudson@ethereum.org), and others https://github.com/ethereum/EIPs/blob/master/EIPS/eip-1.md |
 
-## Abandoned
+## 被弃用(Abandoned)
 
 | 编号 | 标题 | 作者 |
 | --- | --- | --- |
 | [1154](eip-1154.md) | Oracle Interface | [Alan Lu](https://github.com/cag) |
 | [1355](eip-1355.md) | Ethash 1a | [Paweł Bylica (@chfast)](mailto:pawel@ethereum.org), [Jean M. Cyr](https://github.com/jean-m-cyr) |
 
-## Superseded
+## 被取代(Superseded)
 
 | 编号 | 标题 | 作者 |
 | --- | --- | --- |

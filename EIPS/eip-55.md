@@ -1,12 +1,10 @@
----
-eip: 55
-title: Mixed-case checksum address encoding
-author: Vitalik Buterin <vitalik.buterin@ethereum.org>, Alex Van de Sande <avsa@ethereum.org>
-type: Standards Track
-category: ERC
-status: Final
-created: 2016-01-14
----
+# EIP 55: 混合大小写校验和地址编码
+
+| 作者 | 类型 | 分类 | 状态 |  创建时间 |
+| --- | --- | --- | --- | --- |
+Vitalik Buterin <vitalik.buterin@ethereum.org>, Alex Van de Sande <avsa@ethereum.org>| Standards Track|ERC|Final|2016-01-14|
+
+ Mixed-case checksum address encoding
 
 # Specification
 

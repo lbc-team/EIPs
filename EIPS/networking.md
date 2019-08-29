@@ -1,4 +1,9 @@
-# Networking
+# 所有网络提案
+
+有网络提案包括围绕devp2p ([EIP8](eip-8.md)) 和轻客户端子协议的改进，以及对 whisper 和 swarm 网络协议规范的改进建议。
+
+关于提案分类可以阅读[以太坊改进提案概要](https://learnblockchain.cn/docs/eips/)或[EIP-1:EIP 用途及指导原则](https://learnblockchain.cn/docs/eips/eip-1.html)
+
 
 ## 草案(Draft)
 

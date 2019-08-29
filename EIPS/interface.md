@@ -1,4 +1,8 @@
-# Interface
+# 所有接口提案
+
+接口提案包括有关客户端API/RPC规范和标准的改进，以及某些语言级别标准，如方法名([EIP6](eip-6))和合约ABI。
+
+关于提案分类可以阅读[以太坊改进提案概要](https://learnblockchain.cn/docs/eips/)或[EIP-1:EIP 用途及指导原则](https://learnblockchain.cn/docs/eips/eip-1.html)
 
 ## 最后召集(Last Call)
 

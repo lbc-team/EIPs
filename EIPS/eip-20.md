@@ -1,12 +1,10 @@
----
-eip: 20
-title: ERC-20 Token Standard
-author: Fabian Vogelsteller <fabian@ethereum.org>, Vitalik Buterin <vitalik.buterin@ethereum.org>
-type: Standards Track
-category: ERC
-status: Final
-created: 2015-11-19
----
+
+# EIP 20: ERC-20 代币标准（Token Standard）
+
+| 作者 | 状态 | 类型 | 分类 | 创建时间 |
+| --- | --- | --- | --- | --- |
+|Fabian Vogelsteller, Vitalik Buterin| Final | Standards Track  | ERC | 2015-11-19 |
+
 
 ## Simple Summary
 
