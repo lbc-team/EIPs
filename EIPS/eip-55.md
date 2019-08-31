@@ -6,7 +6,7 @@
 
  Mixed-case checksum address encoding
 
-## Specification
+## 规范
 
 Code:
 
@@ -35,14 +35,14 @@ test('0xD1220A0cf47c7B9Be7A2E6BA89F429762e7b9aDb')
 
 In English, convert the address to hex, but if the `i`th digit is a letter (ie. it's one of `abcdef`) print it in uppercase if the `4*i`th bit of the hash of the lowercase hexadecimal address is 1 otherwise print it in lowercase.
 
-## Rationale
+## 原理阐述
 
 Benefits:
 - Backwards compatible with many hex parsers that accept mixed case, allowing it to be easily introduced over time
 - Keeps the length at 40 characters
 - On average there will be 15 check bits per address, and the net probability that a randomly generated address if mistyped will accidentally pass a check is 0.0247%. This is a ~50x improvement over ICAP, but not as good as a 4-byte check code.
 
-## Implementation
+## 实现
 
 In javascript:
 
@@ -77,7 +77,7 @@ Note that the input to the Keccak256 hash is the lowercase hexadecimal string (i
     var hash = createKeccakHash('keccak256').update(Buffer.from(address.toLowerCase(), 'ascii')).digest()
 ```
 
-## Test Cases
+## 测试用例
 
 ```
 # All caps
@@ -118,7 +118,7 @@ Note that the input to the Keccak256 hash is the lowercase hexadecimal string (i
 | Poloniex     | No                                     | No                         | Yes               | Yes              |
 | Shapeshift   | No                                     | No                         | Yes               | Yes              |
 
-## References
+## 参考引用
 
 1. EIP 55 issue and discussion https://github.com/ethereum/eips/issues/55
 2. Python example by @Recmo https://github.com/ethereum/eips/issues/55#issuecomment-261521584

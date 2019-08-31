@@ -305,6 +305,6 @@ See [the revision history for further details](https://github.com/ethereum/EIPs/
 [the Ethereum Magicians forum]: https://ethereum-magicians.org/
 [AllCoreDevs agenda Github Issue]: https://github.com/ethereum/pm/issues
 
-## Copyright
+## 版权
 
 Copyright and related rights waived via [CC0](https://creativecommons.org/publicdomain/zero/1.0/).

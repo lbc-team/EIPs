@@ -9,7 +9,7 @@
 ### Hard Fork
 [Homestead](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-606.md)
 
-### Parameters
+### 参数
 - Activation:
   - Block >= 1,150,000 on Mainnet
   - Block >= 494,000 on Morden
@@ -19,7 +19,7 @@
 
 Add a new opcode, `DELEGATECALL` at `0xf4`, which is similar in idea to `CALLCODE`, except that it propagates the sender and value from the parent scope to the child scope, i.e. the call created has the same sender and value as the original call.
 
-### Specification
+### 规范
 
 `DELEGATECALL`: `0xf4`, takes 6 operands:
 - `gas`: the amount of gas the code may use in order to execute;
@@ -40,7 +40,7 @@ Add a new opcode, `DELEGATECALL` at `0xf4`, which is similar in idea to `CALLCOD
 #### Other notes
 - The depth limit of 1024 is still preserved as normal.
 
-### Rationale
+### 原理阐述
 
 Propagating the sender and value from the parent scope to the child scope makes it much easier for a contract to store another address as a mutable source of code and ''pass through'' calls to it, as the child code would execute in essentially the same environment (except for reduced gas and increased callstack depth) as the parent.
 

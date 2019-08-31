@@ -6,7 +6,7 @@
 |  Felix Lange | 最终 | Standards Track |  Networking | 2015-12-18 |
 
 
-### Abstract
+### 摘要
 
 This EIP introduces new forward-compatibility requirements for implementations of the
 devp2p Wire Protocol, the RLPx Discovery Protocol and the RLPx TCP Transport Protocol.
@@ -14,7 +14,7 @@ Clients which implement EIP-8 behave according to Postel's Law:
 
 > Be conservative in what you do, be liberal in what you accept from others.
 
-### Specification
+### 规范
 
 Implementations of **the devp2p Wire Protocol** should ignore the version number of hello
 packets. When sending the hello packet, the version element should be set to the highest
@@ -67,7 +67,7 @@ ecies.encrypt(PUBKEY, MESSAGE, AUTHDATA)
     but written to HMAC-256 before generating the message tag.
 ```
 
-### Motivation
+### 动机
 
 Changes to the devp2p protocols are hard to deploy because clients running an older
 version will refuse communication if the version number or structure of the hello
@@ -77,7 +77,7 @@ Introducing forward-compatibility requirements as part of the Homestead consensu
 will ensure that all client software in use on the Ethereum network can cope with future
 network protocol upgrades (as long as backwards-compatibility is maintained).
 
-### Rationale
+### 原理阐述
 
 The proposed changes address forward compatibility by applying Postel's Law (also known as
 the Robustness Principle) throughout the protocol stack. The merit and applicability of
@@ -175,11 +175,11 @@ recognition is unlikely to succeed.
   be expected to read or participate in RLPx Discovery traffic, which would be sufficient
   to enable blocking of RLPx TCP connections whatever their format is.
 
-### Backwards Compatibility
+### 向后兼容
 
 This EIP is backwards-compatible, all valid version 4 packets are still accepted.
 
-### Implementation
+### 实现
 
 [go-ethereum](https://github.com/ethereum/go-ethereum/pull/2091)
 [libweb3core](https://github.com/ethereum/libweb3core/pull/46)

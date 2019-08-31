@@ -6,23 +6,23 @@
 |Fabian Vogelsteller, Vitalik Buterin| Final | Standards Track  | ERC | 2015-11-19 |
 
 
-## Simple Summary
+## 简要说明
 
 A standard interface for tokens.
 
 
-## Abstract
+## 摘要
 
 The following standard allows for the implementation of a standard API for tokens within smart contracts.
 This standard provides basic functionality to transfer tokens, as well as allow tokens to be approved so they can be spent by another on-chain third party.
 
 
-## Motivation
+## 动机
 
 A standard interface allows any tokens on Ethereum to be re-used by other applications: from wallets to decentralized exchanges.
 
 
-## Specification
+## 规范
 
 ## Token
 ### Methods
@@ -167,12 +167,12 @@ event Approval(address indexed _owner, address indexed _spender, uint256 _value)
 
 
 
-## Implementation
+## 实现
 
 There are already plenty of ERC20-compliant tokens deployed on the Ethereum network.
 Different implementations have been written by various teams that have different trade-offs: from gas saving to improved security.
 
-#### Example implementations are available at
+#### 示例 implementations are available at
 - [OpenZeppelin implementation](https://github.com/OpenZeppelin/openzeppelin-solidity/blob/9b3710465583284b8c4c5d2245749246bb2e0094/contracts/token/ERC20/ERC20.sol)
 - [ConsenSys implementation](https://github.com/ConsenSys/Tokens/blob/fdf687c69d998266a95f15216b1955a4965a0a6d/contracts/eip20/EIP20.sol)
 
@@ -187,5 +187,5 @@ Historical links related to this standard:
 
 
 
-## Copyright
+## 版权
 Copyright and related rights waived via [CC0](https://creativecommons.org/publicdomain/zero/1.0/).

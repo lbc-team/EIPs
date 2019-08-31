@@ -6,11 +6,11 @@
 |  Vitalik Buterin | Final |  Standards Track | Core | 2015-11-15 |
 
 
-## Meta reference
+## 元引用
 
 [Homestead](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-606.md).
 
-## Parameters
+## 参数
 
 |   FORK_BLKNUM   | CHAIN_NAME  |
 |-----------------|-------------|
@@ -18,7 +18,7 @@
 |   494,000       | Morden      |
 |    0            | Future testnets    |
 
-## Specification
+## 规范
 
 If `block.number >= HOMESTEAD_FORK_BLKNUM`, do the following:
 
@@ -27,7 +27,7 @@ If `block.number >= HOMESTEAD_FORK_BLKNUM`, do the following:
 3. If contract creation does not have enough gas to pay for the final gas fee for adding the contract code to the state, the contract creation fails (i.e. goes out-of-gas) rather than leaving an empty contract.
 4. Change the difficulty adjustment algorithm from the current formula: `block_diff = parent_diff + parent_diff // 2048 * (1 if block_timestamp - parent_timestamp < 13 else -1) + int(2**((block.number // 100000) - 2))` (where the ` + int(2**((block.number // 100000) - 2))` represents the exponential difficulty adjustment component) to `block_diff = parent_diff + parent_diff // 2048 * max(1 - (block_timestamp - parent_timestamp) // 10, -99) + int(2**((block.number // 100000) - 2))`, where `//` is the integer division operator, eg. `6 // 2 = 3`, `7 // 2 = 3`, `8 // 2 = 4`. The `minDifficulty` still defines the minimum difficulty allowed and no adjustment may take it below this.
 
-## Rationale
+## 原理阐述
 
 Currently, there is an excess incentive to create contracts via transactions, where the cost is 21,000, rather than contracts, where the cost is 32,000. Additionally, with the help of suicide refunds, it is currently possible to make a simple ether value transfer using only 11,664 gas; the code for doing this is as follows:
 
@@ -54,7 +54,7 @@ The difficulty adjustment change conclusively solves a problem that the Ethereum
 
 The use of `(block_timestamp - parent_timestamp) // 10` as the main input variable rather than the time difference directly serves to maintain the coarse-grained nature of the algorithm, preventing an excessive incentive to set the timestamp difference to exactly 1 in order to create a block that has slightly higher difficulty and that will thus be guaranteed to beat out any possible forks. The cap of -99 simply serves to ensure that the difficulty does not fall extremely far if two blocks happen to be very far apart in time due to a client security bug or other black-swan issue.
 
-## Implementation
+## 实现
 
 This is implemented in Python here:
 
