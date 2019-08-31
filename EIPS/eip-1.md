@@ -48,7 +48,7 @@ Before you begin writing a formal EIP, you should vet your idea. Ask the Ethereu
 
 In addition to making sure your idea is original, it will be your role as the author to make your idea clear to reviewers and interested parties, as well as inviting editors, developers and community to give feedback on the aforementioned channels. You should try and gauge whether the interest in your EIP is commensurate with both the work involved in implementing it and how many parties will have to conform to it. For example, the work required for implementing a Core EIP will be much greater than for an ERC and the EIP will need sufficient interest from the Ethereum client teams. Negative community feedback will be taken into consideration and may prevent your EIP from moving past the Draft stage.
 
-### Core EIPs
+### 核心 EIPs
 
 For Core EIPs, given that they require client implementations to be considered **Final** (see "EIPs Process" below), you will need to either provide an implementation for clients or convince clients to implement your EIP.
 
@@ -62,7 +62,7 @@ These calls generally result in a "rough consensus" around what EIPs should be i
 
 *In short, your role as the champion is to write the EIP using the style and format described below, shepherd the discussions in the appropriate forums, and build community consensus around the idea.*
 
-### EIP Process
+### EIP 状态流程
 
 Following is the process that a successful EIP will move along:
 
@@ -94,7 +94,7 @@ Other exceptional statuses include:
 * **Active** -- This is similar to Final, but denotes an EIP which may be updated without changing its EIP number.
 * **Superseded** -- An EIP which was previously final but is no longer considered state-of-the-art. Another EIP will be in Final status and reference the Superseded EIP.
 
-## What belongs in a successful EIP?
+## 什么EIP是成功的？
 
 Each EIP should have the following parts:
 

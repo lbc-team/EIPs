@@ -1,4 +1,4 @@
-# EIP 7: DELEGATECALL
+# EIP 7: DELEGATECALL 委托调用操作码
 
 
 | 作者 | 状态 | 类型 | 分类 | 创建时间 |

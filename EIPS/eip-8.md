@@ -1,12 +1,10 @@
----
-eip: 8
-title: devp2p Forward Compatibility Requirements for Homestead
-author: Felix Lange <felix@ethdev.com>
-status: Final
-type: Standards Track
-category: Networking
-created: 2015-12-18
----
+# EIP 8: devp2p Forward Compatibility Requirements for Homestead
+
+
+| 作者 | 状态 | 类型 | 分类 | 创建时间 |
+| --- | --- | --- | --- | --- |
+|  Felix Lange | 最终 | Standards Track |  Networking | 2015-12-18 |
+
 
 ### Abstract
 
