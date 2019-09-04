@@ -184,4 +184,4 @@ event Approval(address indexed _owner, address indexed _spender, uint256 _value)
 
 ## 版权
 
-Copyright and related rights waived via [CC0](https://creativecommons.org/publicdomain/zero/1.0/).
+原文采用[CC0](https://creativecommons.org/publicdomain/zero/1.0/)， 本翻译采用[BY-NC-ND](https://learnblockchain.cn/about/#%E7%89%88%E6%9D%83%E5%8F%8A%E8%BD%AC%E8%BD%BD%E5%A3%B0%E6%98%8E)许可协议，译者：深入浅出区块链 Tiny熊。
