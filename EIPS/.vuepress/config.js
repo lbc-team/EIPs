@@ -1,5 +1,5 @@
 module.exports = {
-  title: "以太坊改进提案 EIPs | 深入浅出区块链",
+  title: "以太坊改进提案 EIPs",
   description: "以太坊改进提案（EIPs）描述了以太坊平台的标准，包括核心协议规范，客户端API和合约标准。",
   ga: "",
   dest: "./dist/docs",
@@ -24,6 +24,7 @@ module.exports = {
       { text: "区块链文档中心", link: "https://learnblockchain.cn/docs/" },
       { text: "En", link: "https://eips.ethereum.org" },
     ],
+    footer: "© Copyright 2017-2019 深入浅出区块链",
     sidebar: [
       {
         title: "EIPs",
