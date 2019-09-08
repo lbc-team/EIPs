@@ -1,0 +1,19 @@
+Display:
+  Core: "核心提案"
+  ERC: "应用标准提案"
+  Interface: "接口提案"
+  Networking: "网络提案"
+  # 状态
+  Abandoned: "被丢弃"
+  Draft: "草稿"
+  Final: "最终"
+  Last Call: "最后召集"
+  Superseded: "被取代"
+
+
+# 确认排序顺序
+StatusOrder:
+  - Last Call
+  - Final
+  - Draft
+  - Abandoned

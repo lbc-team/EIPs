@@ -1,0 +1,37 @@
+    {{$gp:=.Pages.GroupByParam "status" }}
+    <!--  --> 
+    {{ range $status:=$.Site.Data.Config.StatusOrder }} 
+    {{ with (where $.Pages "Params.status" $status)}}
+
+    <h2> 
+        {{if index $.Site.Data.Config.Display $status}}
+         {{index $.Site.Data.Config.Display $status}}({{$status}})
+        {{else}}
+        {{$status}}
+        {{end}}</h2>
+     <table>
+         <thead>
+             <th>
+                序号
+             </th>
+             <th>
+                 标题
+             </th>
+             <th>
+                 作者
+             </th>
+         </thead>
+         <tbody>
+                
+                {{range  .ByParam "eip" }}
+                <tr>
+                    <td>{{.Params.eip}}</td>
+                    <td><a href="{{.RelPermalink}}">{{.Title}}</a></td>
+                    <td>{{partial "author.html" .Params.author}}</td>
+                </tr>		
+                {{end}}
+            
+         </tbody>
+     </table>
+     {{end}}
+{{ end }} 

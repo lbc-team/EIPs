@@ -1,0 +1,16 @@
+{{range split . ","}}
+{{if and (in . "@")  (in . "<")}}
+{{$item:= split . "<"}}
+<a href='mailto:{{ replace (index $item 1) ">" ""}}'>
+	{{safeHTML (index $item 0)}}
+</a>
+{{else if (in . "(@")}}
+{{$item:= split . "(@"}}
+<a href='https://github.com/{{ replace (index $item 1) ")" ""}}'>
+	{{safeHTML (index $item 0)}}
+</a>
+{{else}}
+{{safeHTML .}}
+{{end}}
+<small>,</small>
+{{end }}

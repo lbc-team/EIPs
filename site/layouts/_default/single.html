@@ -1,0 +1,94 @@
+{{ partial "header.html" . }}
+<style>
+	#summaryTable {
+		margin-bottom: 30px;
+		width: 100%;
+		text-align: left;
+		color: #3f3f3f;
+		border-collapse: collapse;
+		border: 1px solid #e8e8e8;
+	}
+
+	#summaryTable th,
+	#summaryTable td {
+		padding: 10px 15px;
+	}
+
+	#body-inner>table th {
+		text-align: right;
+		background-color: #f0f0f0;
+		border: 1px solid #dedede;
+		border-bottom-color: #c9c9c9;
+	}
+</style>
+<table id="summaryTable">
+	<tbody>
+		<tr>
+			<th>EIP</th>
+			<td>
+					<a href="{{.Permalink}}">EIP-{{.Params.eip}}</a>
+					<!-- <a target="_blank" href="https://github.com/ethereum/EIPs/blob/master/EIPS/eip-{{.Params.eip}}.md"
+					rel="nofollow"></a> -->
+				</td>
+		</tr>
+		<tr>
+			<th>作者</th>
+			<td> 
+					{{partial "author.html" .Params.author}}
+			</td>
+
+		</tr> 
+		{{with .Param "discussions-to"}}
+		<tr>
+			<th>讨论场</th>
+			<td><a target="_blank" href="{{.}}" rel="nofollow">{{.}}</a>
+			</td>
+		</tr>
+		{{end}}
+		<tr>
+			<th>状态</th>
+			<td>
+				{{with .Params.status}}
+					{{if index $.Site.Data.Config.Display .}}
+					{{index $.Site.Data.Config.Display .}}({{.}})
+				   {{else}}
+				   {{.}}
+				   {{end}}
+				{{end}}
+			</td>
+		</tr>
+		<tr>
+			<th>类型</th>
+			<td>{{.Params.type}}</td>
+		</tr>
+		{{if .Params.category}}
+		<tr>
+			<th>分类</th>
+			<td>{{.Params.category}}</td>
+		</tr>
+		{{end}}
+		<tr>
+			<th>创建时间</th>
+			<td>{{.Params.created}}</td>
+		</tr>
+	</tbody>
+</table>
+{{$reg :="href=\"(\\.+\\/[^\"]+)\\.md" }}  
+{{$content :=  .Content | replaceRE $reg "href=\"$1.html"}}
+
+{{$reg ="href=\"\\.\\./assets/" }}
+{{$content = $content | replaceRE $reg "href=\"./assets/"}}
+
+{{$reg ="src=\"\\.\\./assets/" }}
+{{$content = $content | replaceRE $reg "src=\"./assets/"}}
+{{$content | safeHTML}}
+
+<footer class="footline">
+	{{with .GitInfo}}
+<div>
+	最后更新：<a rel="nofollow" target="_blank" href="{{$.Site.Params.repo}}/commit/{{.Hash}}">#{{.AbbreviatedHash}}</a> {{.AuthorDate.Format "2006-01-02" }}，by {{.AuthorName}}：{{.Subject}} 
+	</div> 
+	{{end}}
+</footer>
+
+{{ partial "footer.html" . }}
