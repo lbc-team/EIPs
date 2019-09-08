@@ -1,0 +1,94 @@
+baseURL = "https://learnblockchain.cn/docs/eips/"
+defaultContentLanguage = "cn"
+title = "以太坊改进提案 EIPs | 深入浅出区块链"
+
+# 调整目录
+dataDir = "./site/data"
+themesDir = "./site/themes"
+layoutDir = "./site/layouts"
+staticDir = ["./site/static"]
+archetypeDir="./site/archetypes"
+contentDir ="cn"
+
+enableGitInfo = true
+ 
+pygmentsOptions = ""
+# Use the Chroma stylesheet
+pygmentsCodeFences = true
+pygmentsUseClasses = true
+pygmentsUseClassic = false
+
+# See https://help.farbox.com/pygments.html
+#pygmentsStyle = "vs"
+
+rssLimit = 20
+uglyURLs = true
+nofollowLinks = true 
+
+
+[taxonomies]
+  category = "category"
+
+# For search functionality
+[outputs]
+home = [ "HTML", "RSS"] # JSON
+
+[params]
+  useChroma = true
+  repo = "https://github.com/lbc-team/EIPs"
+  # Prefix URL to edit current page. Will display an "Edit this page" button on top right hand corner of every page. 
+  # Useful to give opportunity to people to create merge request for your doc.
+  # See the config.toml file from this documentation site to have an example.
+  editURL = "https://github.com/lbc-team/EIPs/edit/master/cn/"
+  # Author of the site, will be used in meta information
+  author = "深入浅出区块链社区"
+  author_link = "https://learnblockchain.cn/"
+  # Description of the site, will be used in meta information
+  description = "以太坊改进提案 EIPs | 深入浅出区块链"
+  # Shows a checkmark for visited pages on the menu
+  showVisitedLinks = false
+  # Disable search function. It will hide search bar
+  disableSearch = false
+  # Javascript and CSS cache are automatically busted when new version of site is generated. 
+  # Set this to true to disable this behavior (some proxies don't handle well this optimization)
+  disableAssetsBusting = false
+  # Set this to true to disable copy-to-clipboard button for inline code.
+  disableInlineCopyToClipBoard = true
+  # A title for shortcuts in menu is set by default. Set this to true to disable it. 
+  disableShortcutsTitle = false
+  # When using mulitlingual website, disable the switch language button.
+  disableLanguageSwitchingButton = false
+  # Hide breadcrumbs in the header and only show the current page title
+  disableBreadcrumb = false
+  # Hide Next and Previous page buttons normally displayed full height beside content
+  disableNextPrev = false
+  # Order sections in menu by "weight" or "title". Default to "weight"
+  ordersectionsby = "weight"
+  # Change default color scheme with a variant one. Can be "red", "blue", "green".
+  themeVariant = "mine"
+  lastModifierDisplayName = true
+  # 畅言
+  changyan_enable= true # 是否开启评论插件
+  changyan_appid= "cyubaGnrI"# 应用ID
+  changyan_conf = '88df1ba607b5e7fd89a8664391d6b28d' #样式ID  
+  # cnzz 
+  cnzz_enable=true #是否开启cnzz统计
+  cnzz_appid="1265946080"
+
+[[menu.shortcuts]] 
+name = "<i class='fas fa-external-link-alt'></i> 深入浅出区块链" 
+url = "https://learnblockchain.cn/"
+weight = 20
+
+
+[[menu.shortcuts]] 
+name = "<i class='fas fa-external-link-alt'></i> 英文EIP文档" 
+url = "https://eips.ethereum.org/"
+weight = 21
+
+[[menu.shortcuts]]
+name = '<img src="https://img.shields.io/badge/交流-扫码入群-green.svg?logo=wechat&amp;style=flat&amp;color=red">' 
+url = "https://learnblockchain.cn/books/images/wechat-ethereum.jpeg"
+weight = 42 
+
+ 
