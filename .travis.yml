@@ -1,0 +1,25 @@
+language: node_js
+node_js:
+- node
+sudo: required
+dist: trusty
+
+branches:
+  only:
+  - master
+before_install:
+- mkdir work
+- export PATH=$PATH:$PWD/work/  
+install:
+- wget http://collection.b0.upaiyun.com/softwares/upx/upx-linux-amd64-v0.2.3
+  -O $PWD/work/upx
+- chmod +x $PWD/work/upx
+- wget https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_${HUGO_VERSION}_Linux-64bit.deb
+  -O $PWD/work/hugo.deb
+- sudo dpkg -i $PWD/work/hugo.deb
+- npm init -f
+- npm install ---save-dev grunt grunt-cli grunt-contrib-clean grunt-contrib-cssmin
+- npm install ---save-dev grunt-contrib-htmlmin  grunt-exec
+
+script:
+- grunt deploy
