@@ -1,6 +1,6 @@
 ---
 eip: 55
-title: Mixed-case checksum address encoding
+title: 混合大小写校验和地址编码
 author: Vitalik Buterin <vitalik.buterin@ethereum.org>, Alex Van de Sande <avsa@ethereum.org>
 type: Standards Track
 category: ERC
@@ -8,9 +8,9 @@ status: Final
 created: 2016-01-14
 ---
 
-# Specification
+## 规范
 
-Code:
+代码:
 
 ``` python
 from ethereum import utils
@@ -35,18 +35,22 @@ test('0xD1220A0cf47c7B9Be7A2E6BA89F429762e7b9aDb')
 
 ```
 
-In English, convert the address to hex, but if the `i`th digit is a letter (ie. it's one of `abcdef`) print it in uppercase if the `4*i`th bit of the hash of the lowercase hexadecimal address is 1 otherwise print it in lowercase.
 
-# Rationale
+在英文中，将地址转换为十六进制，但如果第`i`个字符是一个字母（即它是`abcdef`之一），如果十六进制的`4*i`位为1则以大写字母打印，否则以小写形式打印。
 
-Benefits:
-- Backwards compatible with many hex parsers that accept mixed case, allowing it to be easily introduced over time
-- Keeps the length at 40 characters
-- On average there will be 15 check bits per address, and the net probability that a randomly generated address if mistyped will accidentally pass a check is 0.0247%. This is a ~50x improvement over ICAP, but not as good as a 4-byte check code.
 
-# Implementation
+## 原理阐述
 
-In javascript:
+优点:
+- 向后兼容许多接受混合大小写的十六进制解析器，允许它随着时间的推移轻松引入
+- 保持长度为40个字符
+- 平均每个地址将有15个校验位，如果输入错误，随机生成的地因抄写错误意外通过检查的净概率为0.0247％。 这比ICAP提高了约50倍，但不如4字节检查代码好。
+
+> ICAP: Inter-exchange Client Address Protocal 是与国际银行账号（IBAN）编码部分兼容的以太坊地址编码形式。
+
+## 实现
+
+javascript代码:
 
 ```js
 const createKeccakHash = require('keccak')
@@ -73,13 +77,15 @@ function toChecksumAddress (address) {
 '0xfB6916095ca1df60bB79Ce92cE3Ea74c37c5d359'
 ```
 
-Note that the input to the Keccak256 hash is the lowercase hexadecimal string (i.e. the hex address encoded as ASCII):
+
+请注意，Keccak256哈希的输入是小写十六进制字符串（即编码为ASCII的十六进制地址）：
+
 
 ```
     var hash = createKeccakHash('keccak256').update(Buffer.from(address.toLowerCase(), 'ascii')).digest()
 ```
 
-# Test Cases
+## 测试用例
 
 ```
 # All caps
@@ -95,7 +101,7 @@ Note that the input to the Keccak256 hash is the lowercase hexadecimal string (i
 0xD1220A0cf47c7B9Be7A2E6BA89F429762e7b9aDb
 ```
 
-# Adoption
+## 采用情况
 
 | Wallet                   | displays checksummed addresses | rejects invalid mixed-case | rejects too short | rejects too long |
 |--------------------------|--------------------------------|----------------------------|-------------------|------------------|
@@ -120,7 +126,7 @@ Note that the input to the Keccak256 hash is the lowercase hexadecimal string (i
 | Poloniex     | No                                     | No                         | Yes               | Yes              |
 | Shapeshift   | No                                     | No                         | Yes               | Yes              |
 
-# References
+## 参考引用
 
 1. EIP 55 issue and discussion https://github.com/ethereum/eips/issues/55
 2. Python example by @Recmo https://github.com/ethereum/eips/issues/55#issuecomment-261521584
