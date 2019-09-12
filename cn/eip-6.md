@@ -1,6 +1,6 @@
 ---
 eip: 6
-title: Renaming SUICIDE opcode
+title: 重命名 SUICIDE 操作码
 author: Hudson Jameson <hudson@hudsonjameson.com>
 status: Final
 type: Standards Track

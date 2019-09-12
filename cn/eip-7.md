@@ -1,6 +1,6 @@
 ---
 eip: 7
-title: DELEGATECALL
+title: DELEGATECALL 委托调用操作码
 author: Vitalik Buterin <v@buterin.com>
 status: Final
 type: Standards Track

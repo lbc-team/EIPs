@@ -1,6 +1,6 @@
 ---
 eip: 2
-title: Homestead Hard-fork Changes
+title: Homestead 硬分叉变更
 author: Vitalik Buterin <v@buterin.com>
 status: Final
 type: Standards Track
