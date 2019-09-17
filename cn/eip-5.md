@@ -9,7 +9,7 @@ created: 2015-11-22
 superseded-by: 211
 ---
 
-### Abstract
+### 摘要
 
 This EIP makes it possible to call functions that return strings and other dynamically-sized arrays.
 Currently, when another contract / function is called from inside the Ethereum Virtual Machine,
@@ -20,7 +20,7 @@ dynamically-sized data both costly and inflexible to the extent that it is actua
 The solution proposed in this EIP is to charge gas only for memory that is actually written to at
 the time the `CALL` returns.
 
-### Specification
+### 规范
 
 The gas and memory semantics for `CALL`, `CALLCODE` and `DELEGATECALL` (called later as `CALL*`)
 are changed in the following way (`CREATE` does not write to memory and is thus unaffected):
@@ -38,7 +38,7 @@ of the opcode.
 
 After the call, the `MSIZE` opcode should return the size the memory was actually grown to.
 
-### Motivation
+### 动机
 
 In general, it is good practise to reserve a certain memory area for the output of a call,
 because letting a subroutine write to arbitrary areas in memory might be dangerous. On the
@@ -63,7 +63,7 @@ i.e. they both forward the input and the output. For this, it is important that 
 size of the output after the call.
 
 
-### Rationale
+### 原理阐述
 
 This way of dealing with the problem requires a minimal change to the Ethereum Virtual Machine.
 Other means of achieving a similar goal would have changed the opcodes themselves or
@@ -78,7 +78,7 @@ backwards compatible.
 
 Some comments are available at https://github.com/ethereum/EIPs/issues/8
 
-### Backwards Compatibility
+### 向后兼容
 
 This proposal changes the semantics of contracts because contracts can access the gas counter
 and the size of memory.
@@ -111,7 +111,7 @@ The change in semantics affects existing contracts in two ways:
    are allocated in a single allocation and not with an intermediate `CALL`.
 
 
-### Implementation
+### 实现
 
 VM implementers should take care not to grow the memory until the end of the call and after a check that sufficient
 gas is still available. Typical uses of the EIP include "reserving" `2**256-1` bytes of memory for the output.

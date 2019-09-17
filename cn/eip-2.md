@@ -8,11 +8,11 @@ category: Core
 created: 2015-11-15
 ---
 
-### Meta reference
+### 元引用
 
 [Homestead](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-606.md).
 
-### Parameters
+### 参数
 
 |   FORK_BLKNUM   | CHAIN_NAME  |
 |-----------------|-------------|

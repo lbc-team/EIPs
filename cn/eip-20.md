@@ -57,10 +57,9 @@ function symbol() public view returns (string)
 ```
 
 
-
 #### 可选函数: decimals
 
-返回令牌使用的小数位数 - 例如"8"，意味着将令牌量除以"100000000"以获取其用户表示形式。
+返回代币使用的小数位数 - 例如"8"，意味着将代币量除以"100000000"以获取其用户表示形式。
 
 
 此函数是可选函数，但是这个函数可以提高代币可用性，不过调用者不能假定这个函数存在。
@@ -72,7 +71,7 @@ function decimals() public view returns (uint8)
 
 #### 函数: totalSupply
 
-返回总令牌供应量。
+返回总代币供应量。
 
 ``` js
 function totalSupply() public view returns (uint256)
@@ -94,7 +93,7 @@ function balanceOf(address _owner) public view returns (uint256 balance)
 
 向 `_to` 地址转移  `_value` 数量的代币，函数必须触发事件 `Transfer` 。
 
-如果调用方的帐户余额没有足够的令牌，则该函数需要抛出异常。
+如果调用方的帐户余额没有足够的代币，则该函数需要抛出异常。
 
 
 *注意* 转移0个代币也是正常转移动作，同样需要触发 `Transfer` 事件。
