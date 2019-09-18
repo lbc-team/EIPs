@@ -71,7 +71,7 @@ function decimals() public view returns (uint8)
 
 #### 函数: totalSupply
 
-返回总代币供应量。
+返回代币总供应量。
 
 ``` js
 function totalSupply() public view returns (uint256)
