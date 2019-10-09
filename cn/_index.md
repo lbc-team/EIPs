@@ -7,7 +7,7 @@ title: "所有EIP"
 > EIP 是 Ethereum Improvement Proposal的缩写，表示以太坊改进提案。
 
 以太坊改进提案（EIPs）描述了以太坊平台的标准，包括核心协议规范，客户端 API和合同标准。
-任何人都可以参与以太坊的改进，参与的方式是向以太坊[EIPs GitHub库](https://github.com/ethereum/EIPs)提交改进提案的pull request，大家可以阅读[EIP-1](eip-1.md) 了解如何提交改进提案。
+任何人都可以参与以太坊的改进，参与的方式是向以太坊[EIPs GitHub库](https://github.com/ethereum/EIPs)提交改进提案的pull request，大家可以阅读[EIP-1](./eip-1.html) 了解如何提交改进提案。
 
 
 关于提案分类可以阅读[以太坊改进提案概要](.)或[EIP-1: EIP 用途及指导原则 ](./eip-1.html)
