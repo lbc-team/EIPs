@@ -61,7 +61,8 @@ module.exports = {
           "/eip-1052",
           "/eip-1234",
           "/eip-1283",
-          "/eip-1344"
+          "/eip-1344",
+          "/eip-1884"
         ]
       },
       {
@@ -100,7 +101,6 @@ module.exports = {
           "/eip-1167",
           "/eip-1820",
           "/eip-875.md"
-
       	]
       },
       {
@@ -115,7 +115,8 @@ module.exports = {
           "/eip-609.md",
           "/eip-779.md",
           "/eip-1013.md",
-          "/eip-1716.md"
+          "/eip-1716.md",
+          "/eip-1679.md"
       	]
       },
       {
